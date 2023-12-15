@@ -25,6 +25,7 @@ set (RAPIDJSON_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set (RAPIDJSON_BUILD_THIRDPARTY_GTEST OFF CACHE BOOL "" FORCE)
 set (RAPIDJSON_ENABLE_INSTRUMENTATION_OPT OFF CACHE BOOL "" FORCE)
 add_subdirectory(thirdparty/json/rapid EXCLUDE_FROM_ALL)
+set (RapidJSON_DIR ${RapidJSON_BINARY_DIR})
 find_package(RapidJSON)
 add_library(RapidJson INTERFACE)
 target_include_directories(RapidJson

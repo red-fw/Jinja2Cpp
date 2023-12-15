@@ -6,9 +6,7 @@ macro (Jinja2CppAddBoostDep name)
     endif ()
 endmacro ()
 
-Jinja2CppAddBoostDep(variant)
 Jinja2CppAddBoostDep(filesystem)
-Jinja2CppAddBoostDep(algorithm)
 
 set_property(TARGET jinja2cpp PROPERTY
   INTERFACE_LINK_LIBRARIES ${JINJA2CPP_INTERFACE_LINK_LIBRARIES}

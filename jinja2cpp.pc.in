@@ -8,5 +8,6 @@ Description: @PROJECT_DESCRIPTION@
 Version: @PROJECT_VERSION@
 
  Requires:
-Libs: -L${libdir} -ljinja2cpp
+Libs: -L${libdir} -lpthread
+Libs.private: -L${libdir}/static -ljinja2cpp
 Cflags: -I${includedir}
